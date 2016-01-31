@@ -1,0 +1,2081 @@
+,bl,ne,sd,sr,acctrain,acctest,kstrain,kstest,cr
+0,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,m2,1,0.1429647767941232,0.14208791208791208,9.653425247696209,9.812925104385899,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.00    0.00   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.35    0.79   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.05    1.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00    0.00   
+92                               shrimp-like_other       0.00    0.00   
+93                                 shrimp_caridean       0.00    0.00   
+94                              shrimp_sergestidae       0.00    0.00   
+95                                     shrimp_zoea       0.00    0.00   
+96              siphonophore_calycophoran_abylidae       0.00    0.00   
+97      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+99         siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+102                       siphonophore_other_parts       0.00    0.00   
+103                           siphonophore_partial       0.00    0.00   
+104                         siphonophore_physonect       0.00    0.00   
+105                   siphonophore_physonect_young       0.00    0.00   
+106                                     stomatopod       0.00    0.00   
+107                     tornaria_acorn_worm_larvae       0.00    0.00   
+108                           trichodesmium_bowtie       0.00    0.00   
+109                         trichodesmium_multiple       0.00    0.00   
+110                             trichodesmium_puff       0.59    0.81   
+111                             trichodesmium_tuft       0.00    0.00   
+112                             trochophore_larvae       0.00    0.00   
+113                              tunicate_doliolid       0.00    0.00   
+114                        tunicate_doliolid_nurse       0.00    0.00   
+115                               tunicate_partial       0.00    0.00   
+116                                  tunicate_salp       0.00    0.00   
+117                           tunicate_salp_chains       0.00    0.00   
+118                      unknown_blobs_and_smudges       0.00    0.00   
+119                                 unknown_sticks       0.00    0.00   
+120                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.49      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.10      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.68      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.00      108  
+116      0.00       76  
+117      0.00       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
+1,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,smote1,1,0.0010830664908645696,0.0006593406593406593,6.995622571500347,7.011864989915837,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.02    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.03        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+2,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,smote2,1,0.0010830664908645696,0.0006593406593406593,7.011002648797342,7.022879844242996,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.01    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.02        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+3,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,smote3,1,0.0009417969485778867,0.0006593406593406593,7.032045550902432,7.037521790528059,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.06    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.11        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+4,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,smote01,1,0.0011772461857223583,0.0007692307692307692,6.925792753872217,6.948752632157052,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.02    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.05        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+5,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,smote05,1,0.001130156338293464,0.0007692307692307692,6.931489977385476,6.954408131738808,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.02    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.04        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+6,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,cluster1,1,0.001130156338293464,0.0007692307692307692,7.079397433166718,7.087931919859618,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.01    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.02        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+7,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,cluster2,1,0.0012243360331512525,0.00032967032967032967,6.972229980967957,6.980254540122448,"                                                cl  precision  recall  \
+1                               acantharia_protist          0       0   
+2                    acantharia_protist_big_center          0       0   
+3                          acantharia_protist_halo          0       0   
+4                                        amphipods          0       0   
+5                    appendicularian_fritillaridae          0       0   
+6                          appendicularian_s_shape          0       0   
+7                     appendicularian_slight_curve          0       0   
+8                         appendicularian_straight          0       0   
+9                                        artifacts          0       0   
+10                                  artifacts_edge          0       0   
+11                         chaetognath_non_sagitta          0       0   
+12                               chaetognath_other          0       0   
+13                             chaetognath_sagitta          0       0   
+14                                  chordate_type1          0       0   
+15                                copepod_calanoid          0       0   
+16                           copepod_calanoid_eggs          0       0   
+17                      copepod_calanoid_eucalanus          0       0   
+18                      copepod_calanoid_flatheads          0       0   
+19                 copepod_calanoid_frillyAntennae          0       0   
+20                          copepod_calanoid_large          0       0   
+21       copepod_calanoid_large_side_antennatucked          0       0   
+22                       copepod_calanoid_octomoms          0       0   
+23             copepod_calanoid_small_longantennae          0       0   
+24                       copepod_cyclopoid_copilia          0       0   
+25                       copepod_cyclopoid_oithona          0       0   
+26                  copepod_cyclopoid_oithona_eggs          0       0   
+27                                   copepod_other          0       0   
+28                                crustacean_other          0       0   
+29                               ctenophore_cestid          0       0   
+30                ctenophore_cydippid_no_tentacles          0       0   
+..                                             ...        ...     ...   
+92                              radiolarian_colony          0       0   
+93                               shrimp-like_other          0       0   
+94                                 shrimp_caridean          0       0   
+95                              shrimp_sergestidae          0       0   
+96                                     shrimp_zoea          0       0   
+97              siphonophore_calycophoran_abylidae          0       0   
+98      siphonophore_calycophoran_rocketship_adult          0       0   
+99      siphonophore_calycophoran_rocketship_young          0       0   
+100        siphonophore_calycophoran_sphaeronectes          0       0   
+101   siphonophore_calycophoran_sphaeronectes_stem          0       0   
+102  siphonophore_calycophoran_sphaeronectes_young          0       0   
+103                       siphonophore_other_parts          0       0   
+104                           siphonophore_partial          0       0   
+105                         siphonophore_physonect          0       0   
+106                   siphonophore_physonect_young          0       0   
+107                                     stomatopod          0       0   
+108                     tornaria_acorn_worm_larvae          0       0   
+109                           trichodesmium_bowtie          0       0   
+110                         trichodesmium_multiple          0       0   
+111                             trichodesmium_puff          0       0   
+112                             trichodesmium_tuft          0       0   
+113                             trochophore_larvae          0       0   
+114                              tunicate_doliolid          0       0   
+115                        tunicate_doliolid_nurse          0       0   
+116                               tunicate_partial          0       0   
+117                                  tunicate_salp          0       0   
+118                           tunicate_salp_chains          0       0   
+119                      unknown_blobs_and_smudges          0       0   
+120                                 unknown_sticks          0       0   
+121                           unknown_unclassified          0       0   
+
+     f1-score  support  
+1           0      276  
+2           0        7  
+3           0       23  
+4           0       18  
+5           0        3  
+6           0      220  
+7           0      177  
+8           0       75  
+9           0      117  
+10          0       55  
+11          0      232  
+12          0      596  
+13          0      215  
+14          0       25  
+15          0      185  
+16          0       47  
+17          0       22  
+18          0       50  
+19          0       21  
+20          0       89  
+21          0       30  
+22          0       15  
+23          0       28  
+24          0        8  
+25          0      252  
+26          0      363  
+27          0        4  
+28          0       60  
+29          0       34  
+30          0       11  
+..        ...      ...  
+92          0       46  
+93          0       17  
+94          0       11  
+95          0       35  
+96          0       40  
+97          0       61  
+98          0       40  
+99          0      144  
+100         0       65  
+101         0       13  
+102         0       76  
+103         0        6  
+104         0       11  
+105         0       40  
+106         0        2  
+107         0        7  
+108         0       11  
+109         0      220  
+110         0       16  
+111         0      565  
+112         0      218  
+113         0        9  
+114         0      130  
+115         0      127  
+116         0      108  
+117         0       76  
+118         0       20  
+119         0       98  
+120         0       54  
+121         0      125  
+
+[121 rows x 5 columns]"
+8,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,cluster3,1,0.0008005274062912036,0.00010989010989010989,7.157338109849683,7.160483507516857,"                                                cl  precision  recall  \
+1                               acantharia_protist          0       0   
+2                    acantharia_protist_big_center          0       0   
+3                          acantharia_protist_halo          0       0   
+4                                        amphipods          0       0   
+5                    appendicularian_fritillaridae          0       0   
+6                          appendicularian_s_shape          0       0   
+7                     appendicularian_slight_curve          0       0   
+8                         appendicularian_straight          0       0   
+9                                        artifacts          0       0   
+10                                  artifacts_edge          0       0   
+11                         chaetognath_non_sagitta          0       0   
+12                               chaetognath_other          0       0   
+13                             chaetognath_sagitta          0       0   
+14                                  chordate_type1          0       0   
+15                                copepod_calanoid          0       0   
+16                           copepod_calanoid_eggs          0       0   
+17                      copepod_calanoid_eucalanus          0       0   
+18                      copepod_calanoid_flatheads          0       0   
+19                 copepod_calanoid_frillyAntennae          0       0   
+20                          copepod_calanoid_large          0       0   
+21       copepod_calanoid_large_side_antennatucked          0       0   
+22                       copepod_calanoid_octomoms          0       0   
+23             copepod_calanoid_small_longantennae          0       0   
+24                       copepod_cyclopoid_copilia          0       0   
+25                       copepod_cyclopoid_oithona          0       0   
+26                  copepod_cyclopoid_oithona_eggs          0       0   
+27                                   copepod_other          0       0   
+28                                crustacean_other          0       0   
+29                               ctenophore_cestid          0       0   
+30                ctenophore_cydippid_no_tentacles          0       0   
+..                                             ...        ...     ...   
+92                              radiolarian_colony          0       0   
+93                               shrimp-like_other          0       0   
+94                                 shrimp_caridean          0       0   
+95                              shrimp_sergestidae          0       0   
+96                                     shrimp_zoea          0       0   
+97              siphonophore_calycophoran_abylidae          0       0   
+98      siphonophore_calycophoran_rocketship_adult          0       0   
+99      siphonophore_calycophoran_rocketship_young          0       0   
+100        siphonophore_calycophoran_sphaeronectes          0       0   
+101   siphonophore_calycophoran_sphaeronectes_stem          0       0   
+102  siphonophore_calycophoran_sphaeronectes_young          0       0   
+103                       siphonophore_other_parts          0       0   
+104                           siphonophore_partial          0       0   
+105                         siphonophore_physonect          0       0   
+106                   siphonophore_physonect_young          0       0   
+107                                     stomatopod          0       0   
+108                     tornaria_acorn_worm_larvae          0       0   
+109                           trichodesmium_bowtie          0       0   
+110                         trichodesmium_multiple          0       0   
+111                             trichodesmium_puff          0       0   
+112                             trichodesmium_tuft          0       0   
+113                             trochophore_larvae          0       0   
+114                              tunicate_doliolid          0       0   
+115                        tunicate_doliolid_nurse          0       0   
+116                               tunicate_partial          0       0   
+117                                  tunicate_salp          0       0   
+118                           tunicate_salp_chains          0       0   
+119                      unknown_blobs_and_smudges          0       0   
+120                                 unknown_sticks          0       0   
+121                           unknown_unclassified          0       0   
+
+     f1-score  support  
+1           0      276  
+2           0        7  
+3           0       23  
+4           0       18  
+5           0        3  
+6           0      220  
+7           0      177  
+8           0       75  
+9           0      117  
+10          0       55  
+11          0      232  
+12          0      596  
+13          0      215  
+14          0       25  
+15          0      185  
+16          0       47  
+17          0       22  
+18          0       50  
+19          0       21  
+20          0       89  
+21          0       30  
+22          0       15  
+23          0       28  
+24          0        8  
+25          0      252  
+26          0      363  
+27          0        4  
+28          0       60  
+29          0       34  
+30          0       11  
+..        ...      ...  
+92          0       46  
+93          0       17  
+94          0       11  
+95          0       35  
+96          0       40  
+97          0       61  
+98          0       40  
+99          0      144  
+100         0       65  
+101         0       13  
+102         0       76  
+103         0        6  
+104         0       11  
+105         0       40  
+106         0        2  
+107         0        7  
+108         0       11  
+109         0      220  
+110         0       16  
+111         0      565  
+112         0      218  
+113         0        9  
+114         0      130  
+115         0      127  
+116         0      108  
+117         0       76  
+118         0       20  
+119         0       98  
+120         0       54  
+121         0      125  
+
+[121 rows x 5 columns]"
+9,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,cluster01,1,0.0011772461857223583,0.000989010989010989,6.968026980987601,6.989955272447076,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.01    0.43   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.03        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+10,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,cluster05,1,0.001130156338293464,0.0007692307692307692,7.091998314677647,7.080827034212553,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.01    0.57   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+92                              radiolarian_colony       0.00    0.00   
+93                               shrimp-like_other       0.00    0.00   
+94                                 shrimp_caridean       0.00    0.00   
+95                              shrimp_sergestidae       0.00    0.00   
+96                                     shrimp_zoea       0.00    0.00   
+97              siphonophore_calycophoran_abylidae       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+99      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+100        siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+101   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+102  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+103                       siphonophore_other_parts       0.00    0.00   
+104                           siphonophore_partial       0.00    0.00   
+105                         siphonophore_physonect       0.00    0.00   
+106                   siphonophore_physonect_young       0.00    0.00   
+107                                     stomatopod       0.00    0.00   
+108                     tornaria_acorn_worm_larvae       0.00    0.00   
+109                           trichodesmium_bowtie       0.00    0.00   
+110                         trichodesmium_multiple       0.00    0.00   
+111                             trichodesmium_puff       0.00    0.00   
+112                             trichodesmium_tuft       0.00    0.00   
+113                             trochophore_larvae       0.00    0.00   
+114                              tunicate_doliolid       0.00    0.00   
+115                        tunicate_doliolid_nurse       0.00    0.00   
+116                               tunicate_partial       0.00    0.00   
+117                                  tunicate_salp       0.00    0.00   
+118                           tunicate_salp_chains       0.00    0.00   
+119                      unknown_blobs_and_smudges       0.00    0.00   
+120                                 unknown_sticks       0.00    0.00   
+121                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.02        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+92       0.00       46  
+93       0.00       17  
+94       0.00       11  
+95       0.00       35  
+96       0.00       40  
+97       0.00       61  
+98       0.00       40  
+99       0.00      144  
+100      0.00       65  
+101      0.00       13  
+102      0.00       76  
+103      0.00        6  
+104      0.00       11  
+105      0.00       40  
+106      0.00        2  
+107      0.00        7  
+108      0.00       11  
+109      0.00      220  
+110      0.00       16  
+111      0.00      565  
+112      0.00      218  
+113      0.00        9  
+114      0.00      130  
+115      0.00      127  
+116      0.00      108  
+117      0.00       76  
+118      0.00       20  
+119      0.00       98  
+120      0.00       54  
+121      0.00      125  
+
+[121 rows x 5 columns]"
+11,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,acluster1,1,0.10910717649274816,0.11010989010989011,4.601021654847566,4.613388363433869,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00     0.0   
+2                    acantharia_protist_big_center       0.00     0.0   
+3                          acantharia_protist_halo       0.00     0.0   
+4                                        amphipods       0.00     0.0   
+5                    appendicularian_fritillaridae       0.00     0.0   
+6                          appendicularian_s_shape       0.00     0.0   
+7                     appendicularian_slight_curve       0.00     0.0   
+8                         appendicularian_straight       0.00     0.0   
+9                                        artifacts       0.00     0.0   
+10                                  artifacts_edge       0.00     0.0   
+11                         chaetognath_non_sagitta       0.00     0.0   
+12                               chaetognath_other       0.07     1.0   
+13                             chaetognath_sagitta       0.00     0.0   
+14                                  chordate_type1       0.03     0.2   
+15                                copepod_calanoid       0.00     0.0   
+16                           copepod_calanoid_eggs       0.00     0.0   
+17                      copepod_calanoid_eucalanus       0.00     0.0   
+18                      copepod_calanoid_flatheads       0.00     0.0   
+19                 copepod_calanoid_frillyAntennae       0.00     0.0   
+20                          copepod_calanoid_large       0.00     0.0   
+21       copepod_calanoid_large_side_antennatucked       0.00     0.0   
+22                       copepod_calanoid_octomoms       0.00     0.0   
+23             copepod_calanoid_small_longantennae       0.00     0.0   
+24                       copepod_cyclopoid_copilia       0.00     0.0   
+25                       copepod_cyclopoid_oithona       0.00     0.0   
+26                  copepod_cyclopoid_oithona_eggs       0.00     0.0   
+27                                   copepod_other       0.00     0.0   
+28                                crustacean_other       0.00     0.0   
+29                               ctenophore_cestid       0.00     0.0   
+30                ctenophore_cydippid_no_tentacles       0.00     0.0   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00     0.0   
+92                               shrimp-like_other       0.00     0.0   
+93                                 shrimp_caridean       0.00     0.0   
+94                              shrimp_sergestidae       0.00     0.0   
+95                                     shrimp_zoea       0.00     0.0   
+96              siphonophore_calycophoran_abylidae       0.00     0.0   
+97      siphonophore_calycophoran_rocketship_adult       0.00     0.0   
+98      siphonophore_calycophoran_rocketship_young       0.00     0.0   
+99         siphonophore_calycophoran_sphaeronectes       0.00     0.0   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00     0.0   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00     0.0   
+102                       siphonophore_other_parts       0.00     0.0   
+103                           siphonophore_partial       0.00     0.0   
+104                         siphonophore_physonect       0.00     0.0   
+105                   siphonophore_physonect_young       0.00     0.0   
+106                                     stomatopod       0.00     0.0   
+107                     tornaria_acorn_worm_larvae       0.00     0.0   
+108                           trichodesmium_bowtie       0.00     0.0   
+109                         trichodesmium_multiple       0.00     0.0   
+110                             trichodesmium_puff       0.76     0.7   
+111                             trichodesmium_tuft       0.00     0.0   
+112                             trochophore_larvae       0.00     0.0   
+113                              tunicate_doliolid       0.00     0.0   
+114                        tunicate_doliolid_nurse       0.00     0.0   
+115                               tunicate_partial       0.00     0.0   
+116                                  tunicate_salp       0.00     0.0   
+117                           tunicate_salp_chains       0.00     0.0   
+118                      unknown_blobs_and_smudges       0.00     0.0   
+119                                 unknown_sticks       0.00     0.0   
+120                           unknown_unclassified       0.00     0.0   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.13      596  
+13       0.00      215  
+14       0.05       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.73      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.00      108  
+116      0.00       76  
+117      0.00       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
+12,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,acluster2,1,0.0731305330570729,0.07516483516483516,4.748407941394605,4.760196620840214,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.00    0.00   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.07    0.99   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.33    0.21   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00    0.00   
+92                               shrimp-like_other       0.00    0.00   
+93                                 shrimp_caridean       0.00    0.00   
+94                              shrimp_sergestidae       0.00    0.00   
+95                                     shrimp_zoea       0.00    0.00   
+96              siphonophore_calycophoran_abylidae       0.00    0.00   
+97      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+99         siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+102                       siphonophore_other_parts       0.00    0.00   
+103                           siphonophore_partial       0.00    0.00   
+104                         siphonophore_physonect       0.00    0.00   
+105                   siphonophore_physonect_young       0.00    0.00   
+106                                     stomatopod       0.00    0.00   
+107                     tornaria_acorn_worm_larvae       0.00    0.00   
+108                           trichodesmium_bowtie       0.00    0.00   
+109                         trichodesmium_multiple       0.00    0.00   
+110                             trichodesmium_puff       0.00    0.00   
+111                             trichodesmium_tuft       0.00    0.00   
+112                             trochophore_larvae       0.00    0.00   
+113                              tunicate_doliolid       0.00    0.00   
+114                        tunicate_doliolid_nurse       0.00    0.00   
+115                               tunicate_partial       0.46    0.75   
+116                                  tunicate_salp       0.00    0.00   
+117                           tunicate_salp_chains       0.00    0.00   
+118                      unknown_blobs_and_smudges       0.00    0.00   
+119                                 unknown_sticks       0.00    0.00   
+120                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.12      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.25       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.00      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.57      108  
+116      0.00       76  
+117      0.00       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
+13,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,acluster3,1,0.0723300056507817,0.07406593406593406,4.739877970682378,4.764137476387865,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.00    0.00   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.07    1.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00    0.00   
+92                               shrimp-like_other       0.00    0.00   
+93                                 shrimp_caridean       0.00    0.00   
+94                              shrimp_sergestidae       0.00    0.00   
+95                                     shrimp_zoea       0.00    0.00   
+96              siphonophore_calycophoran_abylidae       0.00    0.00   
+97      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+99         siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+102                       siphonophore_other_parts       0.00    0.00   
+103                           siphonophore_partial       0.00    0.00   
+104                         siphonophore_physonect       0.00    0.00   
+105                   siphonophore_physonect_young       0.00    0.00   
+106                                     stomatopod       0.00    0.00   
+107                     tornaria_acorn_worm_larvae       0.00    0.00   
+108                           trichodesmium_bowtie       0.00    0.00   
+109                         trichodesmium_multiple       0.00    0.00   
+110                             trichodesmium_puff       0.00    0.00   
+111                             trichodesmium_tuft       0.00    0.00   
+112                             trochophore_larvae       0.00    0.00   
+113                              tunicate_doliolid       0.00    0.00   
+114                        tunicate_doliolid_nurse       0.00    0.00   
+115                               tunicate_partial       0.52    0.65   
+116                                  tunicate_salp       0.00    0.00   
+117                           tunicate_salp_chains       0.23    0.25   
+118                      unknown_blobs_and_smudges       0.00    0.00   
+119                                 unknown_sticks       0.00    0.00   
+120                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.12      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.00      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.58      108  
+116      0.00       76  
+117      0.24       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
+14,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,acluster01,1,0.10359766434356753,0.10098901098901099,4.362357210220538,4.404247032463369,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.00    0.00   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.31    0.58   
+12                               chaetognath_other       0.47    0.64   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.00    0.00   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.00    0.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00    0.00   
+92                               shrimp-like_other       0.00    0.00   
+93                                 shrimp_caridean       0.00    0.00   
+94                              shrimp_sergestidae       0.00    0.00   
+95                                     shrimp_zoea       0.00    0.00   
+96              siphonophore_calycophoran_abylidae       0.00    0.00   
+97      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+99         siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+102                       siphonophore_other_parts       0.00    0.00   
+103                           siphonophore_partial       0.00    0.00   
+104                         siphonophore_physonect       0.00    0.00   
+105                   siphonophore_physonect_young       0.00    0.00   
+106                                     stomatopod       0.00    0.00   
+107                     tornaria_acorn_worm_larvae       0.00    0.00   
+108                           trichodesmium_bowtie       0.00    0.00   
+109                         trichodesmium_multiple       0.00    0.00   
+110                             trichodesmium_puff       0.68    0.69   
+111                             trichodesmium_tuft       0.00    0.00   
+112                             trochophore_larvae       0.00    0.00   
+113                              tunicate_doliolid       0.00    0.00   
+114                        tunicate_doliolid_nurse       0.00    0.00   
+115                               tunicate_partial       0.00    0.00   
+116                                  tunicate_salp       0.00    0.00   
+117                           tunicate_salp_chains       0.00    0.00   
+118                      unknown_blobs_and_smudges       0.00    0.00   
+119                                 unknown_sticks       0.00    0.00   
+120                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.40      232  
+12       0.54      596  
+13       0.00      215  
+14       0.00       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.00      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.69      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.00      108  
+116      0.00       76  
+117      0.00       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
+15,"DecisionTreeClassifier(compute_importances=None, criterion='gini',
+            max_depth=2, max_features=None, max_leaf_nodes=None,
+            min_density=None, min_samples_leaf=1, min_samples_split=2,
+            random_state=None, splitter='best')",5,acluster05,1,0.0896590695046148,0.08868131868131868,4.6740013497408075,4.7014089141220445,"                                                cl  precision  recall  \
+1                               acantharia_protist       0.00    0.00   
+2                    acantharia_protist_big_center       0.00    0.00   
+3                          acantharia_protist_halo       0.00    0.00   
+4                                        amphipods       0.00    0.00   
+5                    appendicularian_fritillaridae       0.00    0.00   
+6                          appendicularian_s_shape       0.00    0.00   
+7                     appendicularian_slight_curve       0.00    0.00   
+8                         appendicularian_straight       0.00    0.00   
+9                                        artifacts       0.00    0.00   
+10                                  artifacts_edge       0.00    0.00   
+11                         chaetognath_non_sagitta       0.00    0.00   
+12                               chaetognath_other       0.00    0.00   
+13                             chaetognath_sagitta       0.00    0.00   
+14                                  chordate_type1       0.09    0.56   
+15                                copepod_calanoid       0.00    0.00   
+16                           copepod_calanoid_eggs       0.00    0.00   
+17                      copepod_calanoid_eucalanus       0.00    0.00   
+18                      copepod_calanoid_flatheads       0.00    0.00   
+19                 copepod_calanoid_frillyAntennae       0.00    0.00   
+20                          copepod_calanoid_large       0.00    0.00   
+21       copepod_calanoid_large_side_antennatucked       0.00    0.00   
+22                       copepod_calanoid_octomoms       0.00    0.00   
+23             copepod_calanoid_small_longantennae       0.00    0.00   
+24                       copepod_cyclopoid_copilia       0.00    0.00   
+25                       copepod_cyclopoid_oithona       0.00    0.00   
+26                  copepod_cyclopoid_oithona_eggs       0.04    1.00   
+27                                   copepod_other       0.00    0.00   
+28                                crustacean_other       0.00    0.00   
+29                               ctenophore_cestid       0.00    0.00   
+30                ctenophore_cydippid_no_tentacles       0.00    0.00   
+..                                             ...        ...     ...   
+91                              radiolarian_colony       0.00    0.00   
+92                               shrimp-like_other       0.00    0.00   
+93                                 shrimp_caridean       0.00    0.00   
+94                              shrimp_sergestidae       0.00    0.00   
+95                                     shrimp_zoea       0.00    0.00   
+96              siphonophore_calycophoran_abylidae       0.00    0.00   
+97      siphonophore_calycophoran_rocketship_adult       0.00    0.00   
+98      siphonophore_calycophoran_rocketship_young       0.00    0.00   
+99         siphonophore_calycophoran_sphaeronectes       0.00    0.00   
+100   siphonophore_calycophoran_sphaeronectes_stem       0.00    0.00   
+101  siphonophore_calycophoran_sphaeronectes_young       0.00    0.00   
+102                       siphonophore_other_parts       0.00    0.00   
+103                           siphonophore_partial       0.00    0.00   
+104                         siphonophore_physonect       0.00    0.00   
+105                   siphonophore_physonect_young       0.00    0.00   
+106                                     stomatopod       0.00    0.00   
+107                     tornaria_acorn_worm_larvae       0.00    0.00   
+108                           trichodesmium_bowtie       0.00    0.00   
+109                         trichodesmium_multiple       0.00    0.00   
+110                             trichodesmium_puff       0.82    0.75   
+111                             trichodesmium_tuft       0.00    0.00   
+112                             trochophore_larvae       0.00    0.00   
+113                              tunicate_doliolid       0.00    0.00   
+114                        tunicate_doliolid_nurse       0.00    0.00   
+115                               tunicate_partial       0.00    0.00   
+116                                  tunicate_salp       0.00    0.00   
+117                           tunicate_salp_chains       0.00    0.00   
+118                      unknown_blobs_and_smudges       0.00    0.00   
+119                                 unknown_sticks       0.00    0.00   
+120                           unknown_unclassified       0.00    0.00   
+
+     f1-score  support  
+1        0.00      276  
+2        0.00        7  
+3        0.00       23  
+4        0.00       18  
+5        0.00        3  
+6        0.00      220  
+7        0.00      177  
+8        0.00       75  
+9        0.00      117  
+10       0.00       55  
+11       0.00      232  
+12       0.00      596  
+13       0.00      215  
+14       0.15       25  
+15       0.00      185  
+16       0.00       47  
+17       0.00       22  
+18       0.00       50  
+19       0.00       21  
+20       0.00       89  
+21       0.00       30  
+22       0.00       15  
+23       0.00       28  
+24       0.00        8  
+25       0.00      252  
+26       0.08      363  
+27       0.00        4  
+28       0.00       60  
+29       0.00       34  
+30       0.00       11  
+..        ...      ...  
+91       0.00       46  
+92       0.00       17  
+93       0.00       11  
+94       0.00       35  
+95       0.00       40  
+96       0.00       61  
+97       0.00       40  
+98       0.00      144  
+99       0.00       65  
+100      0.00       13  
+101      0.00       76  
+102      0.00        6  
+103      0.00       11  
+104      0.00       40  
+105      0.00        2  
+106      0.00        7  
+107      0.00       11  
+108      0.00      220  
+109      0.00       16  
+110      0.78      565  
+111      0.00      218  
+112      0.00        9  
+113      0.00      130  
+114      0.00      127  
+115      0.00      108  
+116      0.00       76  
+117      0.00       20  
+118      0.00       98  
+119      0.00       54  
+120      0.00      125  
+
+[120 rows x 5 columns]"
